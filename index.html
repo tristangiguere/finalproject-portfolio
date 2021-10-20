@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>E-Portfolio</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/Aeonik.css">
+    <link rel="stylesheet" href="assets/css/Aeonik%20Pro.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Red+Hat+Display&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body>
+    <section id="landing" style="background: url(&quot;assets/img/y-so-serious.png&quot;) repeat;background-size: auto;">
+        <div class="container" id="main-cont">
+            <div class="d-flex flex-column justify-content-center align-items-center" id="main-content"><img id="champlain-logo" src="assets/img/CCSL_CW.png">
+                <h1 class="text-center" id="intro-heading">Pet Clinic Scrum Project</h1>
+                <h1 class="text-center" id="intro-subheading" style="color: rgb(197,197,197);font-family: 'Aeonik Pro';font-size: 31px;">E-Portfolio&nbsp; |&nbsp; Tristan Giguère</h1>
+                <div id="sprint-links">
+                    <h1 id="sprnttexts">sprint 1&nbsp; •&nbsp; sprint 2&nbsp; •&nbsp; sprint 3</h1>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading">User Story</h1>
+                <p class="section-paragraph">Throughout the initial sprint of the project, my team and I had difficulties with the user stories we were assigned to. The problems were stopping us from moving forward, as we were encountering many bugs, execution errors and exceptions. However, we took the opportunity of Sprint 2 to move forward in the project, and I decided to adopt a proactive approach. I talked with my team, and we decided that I would push my user stories of Sprint 1 to Sprint 2. Those user stories that I had to implement were the following:<br></p>
+            </div>
+        </div>
+    </section>
+    <section id="generic-section-1">
+        <div class="container" id="columnscontainer">
+            <div class="row">
+                <div class="col-md-6 card-column" id="card-col-left">
+                    <h1 class="card-col-title">Delete Vet</h1>
+                    <p id="card-col-left" class="section-paragraph" style="font-size: 18px;font-weight: bold;">As a user, I want to remove Vets that do not work at the pet clinic anymore.<br></p>
+                    <p id="card-col-left-2" class="section-paragraph" style="font-size: 18px;font-weight: bold;">Acceptance criteria:<br>• An HTTP DELETE request must be sent when the id of the target record is specified in the URL.<br>• If the DELETE request is successful, the HTTP response must display a confirmation page that the record has been deleted.<br></p>
+                </div>
+                <div class="col-md-6 card-column" id="card-col-right">
+                    <h1 class="card-col-title">Update Vet</h1>
+                    <p id="card-col-left-1" class="section-paragraph" style="font-size: 18px;">As a user, I want to be able to update information about vets to keep the information up-to-date.<br></p>
+                    <p id="card-col-left-3" class="section-paragraph" style="font-size: 18px;font-weight: bold;">Acceptance Criteria:<br>• The HTTP PUT request must be sent when the id of the record is in the URL.<br>• The HTTP response must show a form with fields to update the record information.<br></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <p class="section-paragraph" style="font-size: 18px;">The stories both had proper realistic acceptance criteria, which made the implementation clearer, and also respectively had story points estimates that were thoughtfully attributed by our team.&nbsp;<br><br>Also, as I was working on implementing the DeleteVet and doing my tests, I figured that the getVet (method for getting single vet) was not done, as well as the CreateVet method. I needed those for my tests, so I decided to use an Agile approach and be proactive. I therefore decided to reach out to my teammate which was responsible of this story. After informing him, I took over his two stories as well, and therefore successfully implemented three stories for Sprint 2, which are createVet, deleteVet and getVet(single).<br><br><br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section-2">
+                <h1 class="text-center section-heading" id="sect-heading-wht">Version Control</h1>
+                <p class="section-paragraph">During Sprint 2, I utilized Version Control techniques in order to work seamlessly in sync with the shared GitHub repository on the project. Firstly, I created my own branch that followed the naming convention. The branch I initially created was for the first story I was working on, which was DeleteVet.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2012.02.45%20AM.png">
+                <p class="section-paragraph margin-bottom-30px">I also made sure to commit at different intervals, basically I committed every time my code had something new and working to it. I also left clear commit messages for each one. However, as I took over Vlad’s two stories, I did the changes and implementation in the code all at once, and therefore decided to put the new changes for createVet, deleteVet and getVet on the same branch. When I did this, I ensured to combine the commit messages into one, so that the documentation would stay clear and consistent for better readability.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2012.09.56%20AM.png"><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-20%20at%2012.11.45%20AM.png">
+                <p class="section-paragraph margin-bottom-30px">Afterwards, I finally created a pull request, using the appropriate naming template, in order for two of my teammates to review my code and to accept the PR and merge it to the main branch.<br></p><img id="branch-screenshot" src="assets/img/Screen%20Shot%202021-10-19%20at%2011.53.34%20PM.png">
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" style="padding-bottom: 10px;">Test-Driven Development</h1>
+                <p class="section-paragraph">I adopted the concept of Test-Driven Development for my Create, Delete and Get (CDG) user stories for this Sprint. In fact, I made use of the JUnit 5 library in order to successfully build application unit tests. More specifically, I ensured coverage of all implementation for my CDG stories, since I tested my Delete implementation by having a combined test that firstly creates a vet using the Create method, then retrieves the created vet using the Get method, then deletes the vet using the Delete method, and then verifies if the vet still exists with the Get method again. All together, the combined unit tests that I built provide at least 90% of testing of the code coverage, and also offer great readability thanks to the built-in Java Docs documentation that I added at each step of my tests to ensure great readability by other collaborators.<br><br>Regarding the test data used, I used as mentioned above the method to Create, Delete and Get a Vet, and chose real-world test data to make my test as relevant as possible to the real-world.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section id="version-control" class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" id="sect-heading-wht-1" style="color: white;">Code</h1>
+                <p class="section-paragraph">Since my responsibility is mostly related to the API gateway service, most of our operations happen in the domain client and in the presentation layers of the Pet Clinic project.<br><br>Throughout the code that I have developed for my user stories, my code was meeting the requirements set in the acceptance criteria, since my methods were taking the same arguments and attributes as defined in the requirements, and the response of the code implemented were exactly the results expected in the story description and acceptance criteria. For example, for the deleteVet user story, it was necessary that we pass the Id of the vet we want to delete in the URL, and that we in return delete the vet associated to the selected ID from the database. Effectively, our code implementation uses the Id of the Vet in the REST endpoint URL, and in return deletes that vet from our DB.<br><br>The code implemented for each of my user stories can also be used in other languages, as the attributes used are universal and bilingual, and the code is well documented, which would make it easy to add a translation to the exact URL of the request. I also made used of the DTOs in our API Gateway service in order to perform operations on the data.<br><br>To comply with the data model, I used the REST Controller in the Presentation Layer, the Service Client in the domain client layer, as well as the DTOs in the data layer for every functionality that I implemented.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <section class="generic-section">
+        <div class="container" style="max-width: 1200px;">
+            <div class="d-flex flex-column align-items-center align-content-center" id="main-section">
+                <h1 class="text-center section-heading" style="padding-bottom: 10px;">Security</h1>
+                <p class="section-paragraph">Since we are part of the API Gateway service, we are more involved with direct API queries. That said, in Sprint 2, I made sure to use DTOs everywhere it was needed in order to have a securely and efficiently structured implementation. In order to utilize secure programming techniques, I made sure that all the direct database requests that my code performed on the SQL container were built with query parameters, which greatly reduces the risk for injection vulnerabilities. Also, I kept the code simple with well-documented Java Docs so that it would be easy to maintain for security purposes.<br><br></p>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
+</body>
+
+</html>
